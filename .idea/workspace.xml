@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecd640f-31cb-4ede-87b7-26eb312de6cd" name="Changes" comment="" />
+    <list default="true" id="3ecd640f-31cb-4ede-87b7-26eb312de6cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/usecase/mock/MockProductRepository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usecase/product_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/interfaces/productrepository.go" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/interfaces/productrepository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/product.go" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/product.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +26,9 @@
     </option>
   </component>
   <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
@@ -25,6 +36,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="231vWtcjJUNgqqAqQ7iaqX268Kg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,78 +63,61 @@
       <recent name="$PROJECT_DIR$/domain/entity/usuario" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.go test e-commerce/domain/entity">
-    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+  <component name="RunManager" selected="Go Test.go test e-commerce/usecase">
+    <configuration name="TestIfNotSave in e-commerce/usecase" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="e-commerce" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestIfCarrinhoIsNotEmpty in e-commerce/domain/entity" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="e-commerce" />
-      <working_directory value="$PROJECT_DIR$/domain/entity" />
+      <working_directory value="$PROJECT_DIR$/usecase" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="e-commerce/domain/entity" />
+      <package value="e-commerce/usecase" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestIfCarrinhoIsNotEmpty\E$" />
+      <pattern value="^\QTestIfNotSave\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestIfCarrinhoIsNotSelling in e-commerce/domain/entity" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIfSearchReturn in e-commerce/usecase" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="e-commerce" />
-      <working_directory value="$PROJECT_DIR$/domain/entity" />
+      <working_directory value="$PROJECT_DIR$/usecase" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="e-commerce/domain/entity" />
+      <package value="e-commerce/usecase" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestIfCarrinhoIsNotSelling\E$" />
+      <pattern value="^\QTestIfSearchReturn\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestIfCarrinhoIsSelling in e-commerce/domain/entity" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIfSearchReturnNotSuccessfull in e-commerce/usecase" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="e-commerce" />
-      <working_directory value="$PROJECT_DIR$/domain/entity" />
+      <working_directory value="$PROJECT_DIR$/usecase" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="e-commerce/domain/entity" />
+      <package value="e-commerce/usecase" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestIfCarrinhoIsSelling\E$" />
+      <pattern value="^\QTestIfSearchReturnNotSuccessfull\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestIfProductWasBuy in e-commerce/domain/entity" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIfSearchReturnSuccessfull in e-commerce/usecase" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="e-commerce" />
-      <working_directory value="$PROJECT_DIR$/domain/entity" />
+      <working_directory value="$PROJECT_DIR$/usecase" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="e-commerce/domain/entity" />
+      <package value="e-commerce/usecase" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestIfProductWasBuy\E$" />
+      <pattern value="^\QTestIfSearchReturnSuccessfull\E$" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+    <configuration name="go test e-commerce/usecase" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="e-commerce" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="DIRECTORY" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go test e-commerce/domain/entity" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="e-commerce" />
-      <working_directory value="$PROJECT_DIR$/domain/entity" />
+      <working_directory value="$PROJECT_DIR$/usecase" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="e-commerce/domain/entity" />
+      <package value="e-commerce/usecase" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
@@ -130,17 +125,28 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.go test e-commerce/domain/entity" />
-        <item itemvalue="Go Test.TestIfCarrinhoIsNotSelling in e-commerce/domain/entity" />
-        <item itemvalue="Go Test.TestIfCarrinhoIsSelling in e-commerce/domain/entity" />
-        <item itemvalue="Go Test.TestIfCarrinhoIsNotEmpty in e-commerce/domain/entity" />
-        <item itemvalue="Go Test.TestIfProductWasBuy in e-commerce/domain/entity" />
+        <item itemvalue="Go Test.go test e-commerce/usecase" />
+        <item itemvalue="Go Test.TestIfSearchReturnNotSuccessfull in e-commerce/usecase" />
+        <item itemvalue="Go Test.TestIfSearchReturnSuccessfull in e-commerce/usecase" />
+        <item itemvalue="Go Test.TestIfSearchReturn in e-commerce/usecase" />
+        <item itemvalue="Go Test.TestIfNotSave in e-commerce/usecase" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -163,11 +169,18 @@
           <line>30</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/usecase/product.go</url>
+          <line>31</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/e_commerce$TestIfDeleteWitchSuccess_in_e_commerce_usecase.out" NAME="TestIfDeleteWitchSuccess in e-commerce/usecase Coverage Results" MODIFIED="1641096470410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/e_commerce$TestIfCarrinhoIsNotEmpty_in_e_commerce_domain_entity.out" NAME="TestIfCarrinhoIsNotEmpty in e-commerce/domain/entity Coverage Results" MODIFIED="1640919667956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/e_commerce$go_test_e_commerce_domain_entity.out" NAME="go test e-commerce/domain/entity Coverage Results" MODIFIED="1640920580714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/e_commerce$go_test_e_commerce_usecase.out" NAME="go test e-commerce/usecase Coverage Results" MODIFIED="1641174068686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

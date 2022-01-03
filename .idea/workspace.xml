@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ecd640f-31cb-4ede-87b7-26eb312de6cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/usecase/mock/MockProductRepository.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usecase/product_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase/interfaces/productrepository.go" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/interfaces/productrepository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase/product.go" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/product.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapter/controller/product_controller.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -18,7 +18,7 @@ func NewEndereco(complemento, bairro, cidade, logadouro, uf string, numero, cep 
 		Cidade:      cidade,
 		Complemento: complemento,
 		Bairro:      bairro,
-		Logradouro: logadouro,
+		Logradouro:  logadouro,
 		UF:          uf,
 	}
 }

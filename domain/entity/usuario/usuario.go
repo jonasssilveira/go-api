@@ -1,13 +1,13 @@
 package entity
 
 type Usuario struct {
-	Name     string `json:"name"`
-	Email    string `json:"email"`
-	Idade    string `json:"idade"`
+	Name     string      `json:"name"`
+	Email    string      `json:"email"`
+	Idade    string      `json:"idade"`
 	Endereco []*Endereco `json:"endereco"`
-	Cpf      string `json:"cpf"`
-	senha    string `json:"senha"`
-	Telefone string `json:"Telefone"`
+	Cpf      string      `json:"cpf"`
+	senha    string      `json:"senha"`
+	Telefone string      `json:"Telefone"`
 }
 
 func NewUsuario(name, email, telefone, senha string) *Usuario {
@@ -20,6 +20,6 @@ func NewUsuario(name, email, telefone, senha string) *Usuario {
 
 }
 
-func (u *Usuario) SetEndereco(endereco ...*Endereco){
+func (u *Usuario) SetEndereco(endereco ...*Endereco) {
 	u.Endereco = endereco
 }

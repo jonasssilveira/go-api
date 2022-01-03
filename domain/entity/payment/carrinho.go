@@ -7,19 +7,19 @@ import (
 )
 
 type Carrinho struct {
-	Id string
-	Usuario
-	entity.Endereco
-	Product  []*entity2.Product
-	Amount   float64
-	Desconto string
+	Id       string             `json:"id"`
+	Usuario  entity.Usuario     `json:"usuario"`
+	Endereco entity.Endereco    `json:"endereco"`
+	Product  []*entity2.Product `json:"product"`
+	Amount   float64            `json:"amount"`
+	Desconto string             `json:"desconto"`
 }
 
-func NewCarrinho(usuario *Usuario, desconto string, products ...*entity2.Product) *Carrinho {
+func NewCarrinho(usuario *entity.Usuario, desconto string, products ...*entity2.Product) *Carrinho {
 	carrinho := &Carrinho{
 		Id:       uuid.NewV4().String(),
 		Usuario:  *usuario,
-		Endereco: usuario.Endereco,
+		Endereco: *usuario.Endereco[0],
 		Product:  products,
 		Desconto: desconto,
 	}

@@ -1,7 +1,7 @@
 package produto
 
 type Categoria struct {
-	Id        string
-	Name      string
-	Descricao string
+	Id        string`json:"id"`
+	Name      string`json:"name"`
+	Descricao string`json:"descricao"`
 }

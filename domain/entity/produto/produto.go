@@ -6,13 +6,13 @@ import (
 )
 
 type Product struct {
-	Id        string
-	Name      string
-	Quant     int
-	Price     float64
-	Descricao string
-	Categoria
-	Fabricante
+	Id         string  `json:"id"`
+	Name       string  `json:"name"`
+	Quant      int     `json:"quant"`
+	Price      float64 `json:"price''"`
+	Descricao  string  `json:"descricao"`
+	Categoria  `json:"categoria"`
+	Fabricante `json:"fabricante"`
 }
 
 func NewProduct(name, descricao string, quant int, price float64, categoria Categoria, fabricante Fabricante) *Product {

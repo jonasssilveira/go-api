@@ -5,7 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ecd640f-31cb-4ede-87b7-26eb312de6cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/adapter/controller/product_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapter/controllers/ProductController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapter/database/migration/migration.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapter/database/repository/database.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapter/database/repository/produtorepository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapter/routes/route.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/entity/payment/carrinho.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/entity/payment/carrinho.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/entity/payment/creditdata.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/entity/payment/creditdata.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/entity/payment/paymentdata.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/entity/payment/paymentdata.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/entity/payment/paymenttype.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/entity/payment/paymenttype.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/entity/payment/pedido.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/entity/payment/pedido.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/entity/produto/categoria.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/entity/produto/categoria.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/entity/produto/fabricante.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/entity/produto/fabricante.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/entity/produto/produto.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/entity/produto/produto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/entity/usuario/endereco.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/entity/usuario/endereco.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/entity/usuario/usuario.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/entity/usuario/usuario.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/interfaces/productrepository.go" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/interfaces/productrepository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/mock/MockProductRepository.go" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/mock/MockProductRepository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/product.go" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/product.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/product_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/product_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +47,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
@@ -36,6 +68,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -52,12 +85,22 @@
       <recent name="$PROJECT_DIR$/domain/entity/usuario" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/adapter/database/repository" />
       <recent name="$PROJECT_DIR$/domain/entity/payment" />
       <recent name="$PROJECT_DIR$/domain/entity/produto" />
       <recent name="$PROJECT_DIR$/domain/entity/usuario" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.go test e-commerce/usecase">
+  <component name="RunManager" selected="Go Build.go build e-commerce/cmd">
+    <configuration name="go build e-commerce/cmd" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="e-commerce" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="e-commerce/cmd" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/cmd/main.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestIfNotSave in e-commerce/usecase" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="e-commerce" />
       <working_directory value="$PROJECT_DIR$/usecase" />
@@ -70,7 +113,7 @@
       <pattern value="^\QTestIfNotSave\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestIfSearchReturn in e-commerce/usecase" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIfSaveWithSuccess in e-commerce/usecase" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="e-commerce" />
       <working_directory value="$PROJECT_DIR$/usecase" />
       <root_directory value="$PROJECT_DIR$" />
@@ -79,7 +122,7 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestIfSearchReturn\E$" />
+      <pattern value="^\QTestIfSaveWithSuccess\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestIfSearchReturnNotSuccessfull in e-commerce/usecase" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -92,18 +135,6 @@
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <pattern value="^\QTestIfSearchReturnNotSuccessfull\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestIfSearchReturnSuccessfull in e-commerce/usecase" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="e-commerce" />
-      <working_directory value="$PROJECT_DIR$/usecase" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="e-commerce/usecase" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestIfSearchReturnSuccessfull\E$" />
       <method v="2" />
     </configuration>
     <configuration name="go test e-commerce/usecase" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -119,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build e-commerce/cmd" />
         <item itemvalue="Go Test.go test e-commerce/usecase" />
-        <item itemvalue="Go Test.TestIfSearchReturnNotSuccessfull in e-commerce/usecase" />
-        <item itemvalue="Go Test.TestIfSearchReturnSuccessfull in e-commerce/usecase" />
-        <item itemvalue="Go Test.TestIfSearchReturn in e-commerce/usecase" />
         <item itemvalue="Go Test.TestIfNotSave in e-commerce/usecase" />
+        <item itemvalue="Go Test.TestIfSaveWithSuccess in e-commerce/usecase" />
+        <item itemvalue="Go Test.TestIfSearchReturnNotSuccessfull in e-commerce/usecase" />
       </list>
     </recent_temporary>
   </component>
@@ -160,13 +191,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/domain/entity/produto/produto.go</url>
-          <line>30</line>
+          <line>42</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/usecase/product.go</url>
           <line>31</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file:///usr/local/go/bin/pkg/mod/gorm.io/gorm@v1.22.4/migrator/migrator.go</url>
+          <line>164</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file:///usr/local/go/bin/pkg/mod/gorm.io/gorm@v1.22.4/migrator/migrator.go</url>
+          <line>165</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -175,6 +216,6 @@
     <SUITE FILE_PATH="coverage/e_commerce$TestIfDeleteWitchSuccess_in_e_commerce_usecase.out" NAME="TestIfDeleteWitchSuccess in e-commerce/usecase Coverage Results" MODIFIED="1641096470410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/e_commerce$TestIfCarrinhoIsNotEmpty_in_e_commerce_domain_entity.out" NAME="TestIfCarrinhoIsNotEmpty in e-commerce/domain/entity Coverage Results" MODIFIED="1640919667956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/e_commerce$go_test_e_commerce_domain_entity.out" NAME="go test e-commerce/domain/entity Coverage Results" MODIFIED="1640920580714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/e_commerce$go_test_e_commerce_usecase.out" NAME="go test e-commerce/usecase Coverage Results" MODIFIED="1641174068686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/e_commerce$go_test_e_commerce_usecase.out" NAME="go test e-commerce/usecase Coverage Results" MODIFIED="1641347228372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

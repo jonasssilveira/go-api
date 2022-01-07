@@ -4,13 +4,15 @@ import (
 	entity2 "e-commerce/domain/entity/produto"
 	"e-commerce/domain/entity/usuario"
 	uuid "github.com/satori/go.uuid"
+	"gorm.io/gorm"
 )
 
 type Carrinho struct {
-	Id       string             `json:"id"`
-	Usuario  entity.Usuario     `json:"usuario"`
-	Endereco entity.Endereco    `json:"endereco"`
-	Product  []*entity2.Product `json:"product"`
+	gorm.Model
+	Id       string             `json:"id"gorm:"type:uuid;primaryKey;id"`
+	Usuario  entity.Usuario     `json:"usuario"gorm:"foreignKey:Id;references:Id"`
+	Endereco entity.Endereco    `json:"endereco"gorm:"foreignKey:ID;references:ID"`
+	Product  []*entity2.Product `json:"product"gorm:"foreignKey:Id;references:Id"`
 	Amount   float64            `json:"amount"`
 	Desconto string             `json:"desconto"`
 }
@@ -19,7 +21,7 @@ func NewCarrinho(usuario *entity.Usuario, desconto string, products ...*entity2.
 	carrinho := &Carrinho{
 		Id:       uuid.NewV4().String(),
 		Usuario:  *usuario,
-		Endereco: *usuario.Endereco[0],
+		Endereco: usuario.Endereco[0],
 		Product:  products,
 		Desconto: desconto,
 	}

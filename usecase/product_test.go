@@ -49,7 +49,7 @@ func TestIfDeleteWithError(t *testing.T) {
 func TestIfSaveWithSuccess(t *testing.T) {
 	//arrange
 	mockRepo := new(mock.MockRepository)
-	mockRepo.On("GetProductByName", "Filmadora").Return(nil)
+	mockRepo.On("GetProductByName", "Filmadora").Return(product, nil)
 	mockRepo.On("SaveProduct", product).Return(product)
 
 	//act
@@ -64,7 +64,7 @@ func TestIfNotSave(t *testing.T) {
 	mockRepo := new(mock.MockRepository)
 
 	er := errors.New("Não é possivel salvar, pois o produto já existe!")
-	mockRepo.On("GetProductByName", "Filmadora").Return(er)
+	mockRepo.On("GetProductByName", "Filmadora").Return(product, er)
 
 	//act
 	prod := NewProduct(mockRepo)

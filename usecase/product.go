@@ -37,7 +37,7 @@ func (p *Product) DeleteProduct(id string) error {
 }
 
 func (p *Product) SaveProduct(product *produto.Product) (*produto.Product, error) {
-	error := p.Repository.GetProductByName(product.Name)
+	_, error := p.Repository.GetProductByName(product.Name)
 	if error != nil {
 		return nil, errors.New("Não é possivel salvar, pois o produto já existe!")
 	}

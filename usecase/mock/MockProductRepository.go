@@ -25,9 +25,10 @@ func (mock *MockRepository) GetProductById(id string) *produto.Product {
 	result := args.Get(0)
 	return result.(*produto.Product)
 }
-func (mock *MockRepository) GetProductByName(name string) error {
+func (mock *MockRepository) GetProductByName(name string) (*produto.Product,error) {
 	args := mock.Called(name)
-	return  args.Error(0)
+	result := args.Get(0)
+	return result.(*produto.Product), args.Error(1)
 }
 func (mock *MockRepository) GetProductByNameOrCategoryName(name string) *produto.Product {
 	args := mock.Called(name)
